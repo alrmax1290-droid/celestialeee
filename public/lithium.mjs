@@ -50,35 +50,36 @@ async function registerSW() {
 
 	await navigator.serviceWorker.register(stockSW);
 }
+await import("/violet/violet.bundle.js");
+await import("/violet/violet.config.js");
+
+await import("/scram/scramjet.all.js");
+const { ScramjetController } = window.$scramjetLoadController();
+const scramjet = new ScramjetController({
+	files: {
+		wasm: "/scram/scramjet.wasm.wasm",
+		all: "/scram/scramjet.all.js",
+		sync: "/scram/scramjet.sync.js",
+	},
+	flags: {
+		rewriterLogs: false,
+		naiiveRewriter: false,
+		scramitize: false,
+	},
+	siteFlags: {
+		"https://www.google.com/(search|sorry).*": {
+			naiiveRewriter: true,
+		},
+	},
+});
+scramjet.init();
 
 
-    await import("/scram/scramjet.all.js");
-    const { ScramjetController } = window.$scramjetLoadController();
-    const scramjet = new ScramjetController({
-        files: {
-             wasm: "/scram/scramjet.wasm.wasm",
-            all: "/scram/scramjet.all.js",
-            sync: "/scram/scramjet.sync.js",
-         },
-        flags: {
-            rewriterLogs: false,
-            naiiveRewriter: false,
-            scramitize: false,
-        },
-        siteFlags: {
-            "https://www.google.com/(search|sorry).*": {
-                naiiveRewriter: true,
-            },
-        },
-    });
-    scramjet.init();
-
-
-    registerSW()
-        .then(() => console.log("lethal.js: Service Worker registered"))
-        .catch((err) =>
-            console.error("lethal.js: Failed to register Service Worker", err),
-        );
+registerSW()
+	.then(() => console.log("lethal.js: Service Worker registered"))
+	.catch((err) =>
+		console.error("lethal.js: Failed to register Service Worker", err),
+	);
 
 
 //////////////////////////////
@@ -206,7 +207,7 @@ export class Tab {
 		this.frame = document.createElement("iframe");
 		this.frame.setAttribute("class", "w-full h-full border-0 fixed");
 		this.frame.setAttribute("title", "Proxy Frame");
-		this.frame.setAttribute("src", "/newtab");
+		this.frame.setAttribute("src", "/tab.html");
 		this.frame.setAttribute("loading", "lazy");
 		this.frame.setAttribute("id", `frame-${tabCounter}`);
 		framesElement.appendChild(this.frame);
@@ -261,6 +262,8 @@ export class Tab {
 	 * Handles iframe load event: updates history and address input.
 	 */
 	handleLoad() {
+
+		this.statusObject = { isLoading: true, timesErrored: 0 };
 		let url = decodeURIComponent(
 			this.frame?.contentWindow?.location.href.split("/").pop()
 		);
@@ -271,6 +274,43 @@ export class Tab {
 			: [];
 		history = [...history, { url, title }];
 		localStorage.setItem("history", JSON.stringify(history));
+
+		const checkForIframeError = () => {
+			try {
+				const iframeDoc = this.frame.contentDocument || this.frame.contentWindow.document;
+
+				// Safely read text content (in lowercase for easy matching)
+				const bodyText = iframeDoc.body?.textContent?.toLowerCase() || "";
+
+				const hasBareClientError = bodyText.includes("there are no bare clients");
+				const hasErrorTitle = iframeDoc.querySelector("#errorTitle");
+
+				const shouldReload =
+					this.statusObject.timesErrored < 5 && (hasBareClientError || hasErrorTitle);
+
+				if (shouldReload) {
+					this.statusObject.timesErrored++;
+					console.warn(
+						`Iframe error detected (${this.statusObject.timesErrored}/5). Reloading...`
+					);
+					this.frame.contentWindow.location.reload();
+					return true;
+				} else {
+					// Reset if it's clean
+					this.statusObject.timesErrored = 0;
+					return false;
+				}
+			} catch (err) {
+				// Cross-origin iframe or inaccessible document — skip safely
+				console.debug("Iframe inaccessible (cross-origin). Skipping error scan.", err);
+				return false;
+			}
+		};
+
+		// Check immediately and then again after a short delay
+		if (!checkForIframeError()) {
+			setTimeout(checkForIframeError, 1000);
+		}
 
 		document.dispatchEvent(
 			new CustomEvent("url-changed", {
