@@ -45,7 +45,7 @@ async function registerSW() {
 		)
 			throw new Error("Service workers cannot be registered without https.");
 
-		throw new Error("Your browser doesn't support service workers.");
+		throw new Error("whoops! this browser doesn't support service workers.");
 	}
 
 	await navigator.serviceWorker.register(stockSW);
@@ -205,7 +205,7 @@ export class Tab {
 		this.tabNumber = tabCounter;
 
 		this.frame = document.createElement("iframe");
-		this.frame.setAttribute("class", "w-full h-full border-0 fixed");
+		this.frame.setAttribute("class", "searchframe");
 		this.frame.setAttribute("title", "Proxy Frame");
 		this.frame.setAttribute("src", "/tab.html");
 		this.frame.setAttribute("loading", "lazy");
@@ -318,7 +318,8 @@ export class Tab {
 			}),
 		);
 
-		if (url === "newtab") url = "celestial://newtab";
+		if (url === "tab.html") url = "celestial://newtab";
+		if (url === "/news/") url = "celestial://games";
 		addressInput.value = url;
 	}
 }

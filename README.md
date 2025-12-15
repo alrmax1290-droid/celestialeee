@@ -12,5 +12,6 @@
 - Scramjet & UV Support.
 
 ## Credits:
-- Coding4Hours & JustJxrdanWasDefinetlyTaken - site
+- JustJxrdanWasDefinetlyTaken - site
 - MercuryWorkshop - Scramjet
+- Coding4Hours - Lithium (and emotional support)
