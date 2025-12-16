@@ -18,25 +18,26 @@ nav {
   height: 38px;
   padding: 0 8px;
   font-family: 'Inter', sans-serif;
-  margin-bottom: 10px;
   width: calc(100vw - 100px);
   min-width: calc(100vw - 100px);
 }
 
 #tabs {
-  flex: 1;
   display: flex;
+  align-items: center;
+  flex: 1;
   overflow-x: auto;
   gap: 4px;
   scrollbar-width: thin;
   scrollbar-color: var(--color);
 }
 
+
 [data-tab-id] {
   background: var(--pallet);
   display: flex;
   align-items: center;
-  padding: 7px;
+  padding: 10px;
   background: none;
   cursor: pointer;
   user-select: none;
@@ -84,9 +85,9 @@ nav {
 }
 
 #new-tab-btn {
-  padding: 6px 10px;
+  padding: 7px;
   background: var(--pallet);
-  border: 1px solid var(--border);
+  border:none;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
@@ -97,11 +98,11 @@ nav {
   top: 10px;
   right: 10px;
   position: absolute;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
 #new-tab-btn:hover {
-  background:var(--pallet-hover);
+  background: var(--pallet-hover);
 }
 
 .draggable-tab.dragging {
@@ -131,6 +132,8 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 #form input {
@@ -146,8 +149,9 @@ hr {
   min-width: calc(100vw - 75px);
   outline: none;
   background-color: rgba(255, 255, 255, 0.1);
-  color:var(--color);
+  color: var(--color);
   font-family: 'Inter', sans-serif;
+  margin-bottom: 10px;
 }
 
 .fc {
@@ -156,10 +160,13 @@ hr {
   color: var(--color);
   padding: 8px;
   border-radius: 10px;
-  display: inline-block;
-  vertical-align: middle;
-  width:20px;
-  height:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 section {
@@ -287,114 +294,26 @@ section {
     opacity: 0;
     transform: translate(-50%, -48%);
   }
+
   to {
     opacity: 1;
     transform: translate(-50%, -50%);
   }
 }
 
-#history-search {
-  width: calc(100vw - 500px);
-  padding: 12px 16px;
-  margin-bottom: 16px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  font-size: 14px;
-  transition: all 0.2s;
-}
-
-#history-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-#history-list li {
-  padding: 16px 20px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 14px;
-  background: var(--pallet);
-  border: 1px solid var(--border);
-  cursor: pointer;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-#history-list li:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-color: var(--color);
-}
-
-#history-list li.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#history-list img {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  background: none;
-  flex-shrink: 0;
-}
-
-#clear-history {
-  margin-top: 16px;
-  width: 100%;
-  padding: 12px;
-  background: var(--pallet);
-  color: var(--color);
-  border: 1px solid var(--border);
-  cursor: pointer;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 14px;
-  transition: all 0.2s;
-}
-
-#clear-history:hover {
-  background: var(--pallet-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-#clear-history:active {
-  transform: translateY(0);
-}
-
-#close-history {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 32px;
-  height: 32px;
-  background: var(--pallet);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  font-size: 18px;
-  color: var(--color);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-}
-
-#close-history:hover {
-  background: var(--pallet-hover);
-  transform: scale(1.05);
-}
-
 .searchframe {
-  width:99vw;
-  height: calc(100vh - 100px);
-  min-height: calc(100vh - 100px);
+  width: 100%;
+  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
+  border:none;
+  border-radius:7px;
+}
+
+.tabthing {
+  background: var(--pallet-hover);
+  padding: 10px;
+  height: calc(100vh - 75px);
+  min-height: calc(100vh - 75px);
+  width:fit-content;
+  border-radius:5px;
 }

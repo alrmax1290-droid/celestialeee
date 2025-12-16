@@ -23,6 +23,8 @@
 // foot2.target = "_blank"
 // foot3.textContent = "legal";
 //
+document.title = "celestial.";
+
 const iframe = document.createElement('iframe');
 
 // Apply styles to stretch the iframe over the whole window
@@ -33,7 +35,6 @@ iframe.style.width = "100vw";
 iframe.style.height = "100vh";
 iframe.style.border = "none";
 iframe.style.zIndex = "9999"; // Ensures it sits on top of everything
-
 
 iframe.src = "/tabs.html"
 

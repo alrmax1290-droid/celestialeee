@@ -89,10 +89,10 @@ registerSW()
 /**
  * Creates a valid URL from input or returns a search URL.
  * @param {string} input - The input string or URL.
- * @param {string} [template="https://search.brave.com/search?q=%s"] - Search URL template.
+ * @param {string} [template="https://duckduckgo.com/?q=%s"] - Search URL template.
  * @returns {string} Valid URL string.
  */
-export function makeURL(input, template = "https://search.brave.com/search?q=%s") {
+export function makeURL(input, template = "https://duckduckgo.com/?q=%s") {
 	try {
 		return new URL(input).toString();
 	} catch (err) { }
@@ -338,16 +338,30 @@ export async function newTab() {
  */
 export function switchTab(tabNumber) {
 	const frames = document.querySelectorAll("iframe");
-	[...frames].forEach((frame) => {
+	frames.forEach((frame) => {
 		frame.classList.toggle("hidden", frame.id !== `frame-${tabNumber}`);
 	});
 
 	currentTab = tabNumber;
 	currentFrame = document.getElementById(`frame-${tabNumber}`);
 
-	addressInput.value = decodeURIComponent(
-		currentFrame?.contentWindow?.location.href.split("/").pop()
-	);
+	let url = "";
+	try {
+		url = decodeURIComponent(currentFrame.contentWindow.location.href.split("/").pop());
+	} catch (err) {
+		url = currentFrame.getAttribute("src");
+	}
+
+	if (url === "tab.html" || url.endsWith("/tab.html")) {
+		url = "celestial://newtab";
+	} else if (url.includes("/news/")) {
+		url = "celestial://games";
+	} else if (url.startsWith("/assets/src/")) {
+		const file = url.replace("/assets/src/", "");
+		url = `celestial://gamesource/${file}`;
+	}
+
+	addressInput.value = url;
 
 	document.dispatchEvent(
 		new CustomEvent("switch-tab", {

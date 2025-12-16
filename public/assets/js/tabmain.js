@@ -1,5 +1,5 @@
 // homepage
- document.title = "celestial.";
+ document.title = "new tab.";
  const h1 = document.querySelector('#main');
  const url = document.querySelector('.url');
  const card = document.querySelector('#card');
