@@ -89,10 +89,10 @@ registerSW()
 /**
  * Creates a valid URL from input or returns a search URL.
  * @param {string} input - The input string or URL.
- * @param {string} [template="https://duckduckgo.com/?q=%s"] - Search URL template.
+ * @param {string} [template="https://search.brave.com/search?q=%s"] - Search URL template.
  * @returns {string} Valid URL string.
  */
-export function makeURL(input, template = "https://duckduckgo.com/?q=%s") {
+export function makeURL(input, template = "https://search.brave.com/search?q=%s") {
 	try {
 		return new URL(input).toString();
 	} catch (err) { }
