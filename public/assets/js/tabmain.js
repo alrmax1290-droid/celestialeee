@@ -1,14 +1,26 @@
+import {
+	setWisp,
+	makeURL,
+	getProxied,
+	setTransport,
+	setProxy,
+} from "/lithium.mjs"
+
+
+
+
+
 // homepage
- document.title = "new tab.";
- const h1 = document.querySelector('#main');
- const url = document.querySelector('.url');
- const card = document.querySelector('#card');
- const card2 = document.querySelector('#card2');
- const card3 = document.querySelector('#card3');
- const card4 = document.querySelector('#card4');
- const foot = document.querySelector('.footer .a');
- const foot2 = document.querySelector('.footer .a2');
- const foot3 = document.querySelector('.footer .a3');
+document.title = "new tab.";
+const h1 = document.querySelector('#main');
+const url = document.querySelector('.url');
+const card = document.querySelector('#card');
+const card2 = document.querySelector('#card2');
+const card3 = document.querySelector('#card3');
+const card4 = document.querySelector('#card4');
+const foot = document.querySelector('.footer .a');
+const foot2 = document.querySelector('.footer .a2');
+const foot3 = document.querySelector('.footer .a3');
 
  h1.textContent = "celestial.";
  url.placeholder = "search with ease";
@@ -19,6 +31,6 @@
  card4.querySelector('p').textContent = "tools";
  foot.textContent = "settings";
  foot2.innerHTML = "dis<span>c</span>ord";
- foot2.href = "https://dsc.gg/gnetwork";
+ foot2.href = "https:dsc.gg/gnetwork";
  foot2.target = "_blank"
  foot3.textContent = "legal";
