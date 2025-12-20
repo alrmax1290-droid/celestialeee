@@ -121,6 +121,21 @@
       Tab
     } from "/lithium.mjs"
 
+
+    
+    // --- INIT ---
+    const form = document.getElementById("form")
+    let search =
+      localStorage.getItem("search-engine") ||
+      "https://search.brave.com/search?q=%s"
+
+
+    setProxy("violet")
+
+
+    setWisp((location.protocol === "https:" ? "wss://" : "ws://") + location.host + "/wisp/");
+
+    setTransport("libcurl")
             async function autofill(url) {
       const urlToLoad = makeURL(url, search)
       const proxiedUrl = await getProxied(urlToLoad)
@@ -136,21 +151,6 @@
       if (url) autofill(url);
       
     } catch { }
-    
-    // --- INIT ---
-    const form = document.getElementById("form")
-    let search =
-      localStorage.getItem("search-engine") ||
-      "https://search.brave.com/search?q=%s"
-
-
-    setProxy("violet")
-
-
-    setWisp((location.protocol === "https:" ? "wss://" : "ws://") + location.host + "/wisp/");
-
-    setTransport("libcurl")
-
 
     // --- EVENTS ---
     form?.addEventListener("submit", async (event) => {
