@@ -317,7 +317,7 @@ export class Tab {
 				detail: { tabId: currentTab, title, url },
 			}),
 		);
-
+		// lithium wont like detect folders/directories, so i had to do this. pretty inefficient.
 		if (url === "tab.html") url = "celestial://newtab";
 		if (url === "index.html?type=g") url = "celestial://games";
 		if (url === "index.html?type=c") url = "celestial://chat";
@@ -325,6 +325,7 @@ export class Tab {
 		if (url === "index.html?type=ap") url = "celestial://tools";
 		if (url === "index.html?type=s") url = "celestial://settings";
 		if (url === "index.html?type=l") url = "celestial://legal-page";
+		if (url.includes("tab.html?autofill=")) url = "loading..";
 		addressInput.value = url;
 	}
 }

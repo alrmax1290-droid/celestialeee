@@ -16,13 +16,15 @@
 <body>
     <div class="main">
         <h1 id="main">Drew's Learning Academy</h1>
-        <input class="url" placeholder="search for online lessons">
+        <form id="form">
+        <input class="url" id="address" placeholder="search for online lessons">
+        </form>
         <div class="row-thing">
             <div class="card" id="card" onclick="window.location.href='/news/index.html?type=g'">
                 <img src="/assets/img/gms/gms.png" />
                 <p>Contact</p>
             </div>
-            <div class="card" id="card2" onclick="window.location.href='/support/index.html?type=c'">
+            <div class="card" id="card2" onclick="window.locatiion.href='/support/index.html?type=c'">
                 <img src="/assets/img/msg.png" />
                 <p>Questions</p>
             </div>
@@ -64,5 +66,42 @@
 <script src="/assets/js/tabmain.js" type="module"></script>
 <script>
 	document.title = "new tab";
+</script>
+<script defer type="module">
+  import {
+    setWisp,
+    makeURL,
+    setProxy,
+    getProxied
+  } from "/lithium.mjs";
+
+  setWisp((location.protocol === "https:" ? "wss://" : "ws://") + location.host + "/wisp/");
+  setProxy("scram");
+
+  let search =
+    localStorage.getItem("search-engine") ||
+    "https://search.brave.com/search?q=%s";
+
+  // --- AUTOFILL (NO FRAME / NO currentTab) ---
+  async function autofill(url) {
+    const urlToLoad = makeURL(url, search);
+    const proxiedUrl = await getProxied(urlToLoad);
+    location.href = proxiedUrl;
+  }
+
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const url = params.get("autofill");
+    if (url) autofill(url);
+  } catch {}
+
+  const form = document.getElementById("form");
+  const input = document.getElementById("address");
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const proxiedUrl = await getProxied(makeURL(input.value, search));
+    location.href = proxiedUrl;
+  });
 </script>
 </html>
