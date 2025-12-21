@@ -1,4 +1,4 @@
-import { libcurlPath } from "@mercuryworkshop/libcurl-transport"
+import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
 import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
 import { server as wisp, logging } from "@mercuryworkshop/wisp-js/server";
 import express from "express";
@@ -18,7 +18,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static(join(fileURLToPath(import.meta.url), "../public/")));
 app.use("/mux/", express.static(baremuxPath));
-app.use("/curl", express.static(libcurlPath));
+app.use("/epoxy/", express.static(epoxyPath));
 
 app.post("/api/chat", async (req, res) => {
   try {
