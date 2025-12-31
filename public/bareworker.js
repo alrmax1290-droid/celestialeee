@@ -2,3 +2,4 @@
 importScripts(
   "/mux/worker.js",
 )
+

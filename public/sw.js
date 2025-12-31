@@ -4,7 +4,7 @@ importScripts(
 importScripts("/violet/violet.config.js")
 importScripts("/violet/violet.sw.js")
 importScripts("/scram/scramjet.all.js");
-
+importScripts("/assets/js/ww/workerware.js");
 
 
 if (navigator.userAgent.includes("Firefox")) {

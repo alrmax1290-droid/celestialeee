@@ -13,7 +13,7 @@ document.write(`
 <body>
 
 <div class="search">
-  <input class="textbook" placeholder="search the reason why slqnt is gay..">
+  <input class="textbook" placeholder="search..">
   <select>
     <option selected value="all">All Games</option>
     <option value="exclusive">Exclusives</option>

@@ -23,9 +23,21 @@ function inspect() {
   try {
     // load and show console
     const d = f.contentWindow.document;
+
+    if (f.contentWindow.__erudaOn) {
+      try { f.contentWindow.eruda.destroy(); } catch {}
+      d.querySelectorAll('script[src*="eruda"]').forEach(s => s.remove());
+      f.contentWindow.__erudaOn = false;
+      return;
+    }
+
     const s = d.createElement('script');
     s.src = 'https://cdn.jsdelivr.net/npm/eruda';
-    s.onload = () => (f.contentWindow.eruda.init(), f.contentWindow.eruda.show());
+    s.onload = () => {
+      f.contentWindow.eruda.init();
+      f.contentWindow.eruda.show();
+      f.contentWindow.__erudaOn = true;
+    };
     // kidnap my child 🤑
     d.body.appendChild(s);
   } catch {
