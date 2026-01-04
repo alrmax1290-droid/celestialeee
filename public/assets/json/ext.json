@@ -1,6 +1,12 @@
 [
     {
         "name": "BlooketGUI",
-        "src": "fetch('https://raw.githubusercontent.com/minesraft4/blooket-gui/refs/heads/main/GUI').then(r=>r.text()).then(t=>document.body.innerHTML+=`<script>${t}<\/script>`)"
+        "website": "play.blooket.com",
+        "src": "var s=document.createElement('script');fetch('https://raw.githubusercontent.com/minesraft4/blooket-gui/refs/heads/main/GUI').then(r=>r.text()).then(t=>document.body.innerHTML+=`<script>${t}<\/script>`)"
+    },
+    {
+        "name": "example",
+        "website": "example.com",
+        "src": "alert('raviola family on bottom!');"
     }
 ]

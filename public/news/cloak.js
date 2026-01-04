@@ -16,7 +16,7 @@ document.write(`
   <input class="textbook" placeholder="search..">
   <select>
     <option selected value="all">All Games</option>
-    <option value="exclusive">Exclusives</option>
+    <option value="exclusive">Popular</option>
     <option value="sandbox">Sandbox</option>
     <option value="indie">Indie</option>
     <option value="rpg">RPG</option>

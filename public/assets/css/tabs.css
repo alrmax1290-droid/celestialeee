@@ -317,3 +317,12 @@ section {
   width:fit-content;
   border-radius:5px;
 }
+
+#panel {
+  display:none;
+}
+
+#panel .doug {
+  z-index:999999999999;
+  width:200px;
+}
