@@ -310,6 +310,7 @@ export class Tab {
 		// lithium wont like detect folders/directories, so i had to do this. pretty inefficient.
 		if (url === "tab.html") url = "celestial://newtab";
 		if (url === "index.html?type=g") url = "celestial://games";
+		if (url === "index.html?type=part") url = "celestial://misc";
 		if (url === "index.html?type=c") url = "celestial://chat";
 		if (url === "index.html?type=m") url = "celestial://media";
 		if (url === "index.html?type=ap") url = "celestial://tools";

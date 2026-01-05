@@ -24,6 +24,7 @@ document.write(`
     <option value="2player">2 Player</option>
     <option value="adventure">Adventure</option>
     <option value="horror">Horror</option>
+    <option value="tools">Tools</option>
   </select>
   <select>
     <option selected value="abc">In Order</option>

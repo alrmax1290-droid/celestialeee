@@ -16,8 +16,9 @@ document.write(`
 <body>
 <div align="center">
 <h1>legal directory</h1>
-<a href="">terms of service</a>
-<a href="">dmca</a>
+<a href="./tos.html">terms of service</a>
+<a href="./pp.html">privacy policy</a>
+<a href="./dmca.html">dmca</a>
 </div>
 </body>
 </html>

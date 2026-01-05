@@ -15,7 +15,7 @@ document.write(`
 <body>
 
 </body>
-<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/ai.js"></script>
 
 </html>
 `);
