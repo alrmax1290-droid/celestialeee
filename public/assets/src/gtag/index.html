@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gtag</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="shortcut icon" href="https://truffled.lol/games/gtag/Build/TemplateData/favicon.ico">
     <style>
         * {
             margin: 0;
             padding: 0;
         }
+
         body {
             overflow: hidden;
             background: #000;
-            
+
         }
+
         #unity-container {
             width: 100vw;
             height: 100vh;
         }
+
         #unity-canvas {
             width: 100%;
             height: 100%;
             display: block;
         }
+
         #unity-loading-bar {
             position: absolute;
             left: 50%;
@@ -31,13 +36,14 @@
             transform: translate(-50%, -50%);
             text-align: center;
         }
+
         #unity-logo {
             width: 154px;
             height: 130px;
-            background: url('TemplateData/unity-logo-dark.png') no-repeat center;
             background-size: contain;
             margin: 0 auto 20px;
         }
+
         #unity-progress-bar-empty {
             width: 200px;
             height: 18px;
@@ -45,17 +51,20 @@
             border-radius: 3px;
             margin: 0 auto;
         }
+
         #unity-progress-bar-full {
             width: 0%;
             height: 18px;
             background: #fff;
             border-radius: 3px;
         }
+
         .hidden {
             display: none !important;
         }
     </style>
 </head>
+
 <body>
     <div id="unity-container">
         <canvas id="unity-canvas"></canvas>
@@ -72,19 +81,20 @@
         const loadingBar = document.getElementById("unity-loading-bar");
         const progressBar = document.getElementById("unity-progress-bar-full");
 
-        const buildUrl = "Build";
+        const buildUrl = "https://truffled.lol/games/gtag/Build";
         const config = {
-            dataUrl:"/assets/src/gtag/Build/gorilla tag web port build.data.gz",
-            frameworkUrl: buildUrl + "/gorilla tag web port build.framework.js.gz",
-            codeUrl: buildUrl + "/gorilla tag web port build.wasm.gz",
+            dataUrl: buildUrl + "/gorilla%20tag%20web%20port%20build.data.gz",
+            frameworkUrl: buildUrl + "/gorilla%20tag%20web%20port%20build.framework.js.gz",
+            codeUrl: buildUrl + "/gorilla%20tag%20web%20port%20build.wasm.gz",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "boolonx",
             productName: "gorilla tag web",
             productVersion: "1.0"
         };
 
+
         const script = document.createElement("script");
-        script.src = buildUrl + "/gorilla tag web port build.loader.js";
+        script.src = buildUrl + "/gorilla%20tag%20web%20port%20build.loader.js";
         script.onload = () => {
             createUnityInstance(canvas, config, (progress) => {
                 progressBar.style.width = (100 * progress) + "%";
@@ -94,8 +104,9 @@
                 alert(error);
             });
         };
-        
+
         document.body.appendChild(script);
     </script>
 </body>
+
 </html>

@@ -156,7 +156,7 @@ hr {
 
 .fc {
   border: 1px solid var(--border);
-  background: var(--pallet);
+  background: var(--background);
   color: var(--color);
   padding: 8px;
   border-radius: 10px;
@@ -167,6 +167,7 @@ hr {
   height: 20px;
   margin-bottom: 10px;
   text-decoration: none;
+  opacity:1;
 }
 
 section {
