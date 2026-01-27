@@ -97,9 +97,9 @@ input.url:focus {
     cursor: pointer;
 }
 
-.gridthing{
-    width:100%;
-    height:100%;
+.gridthing {
+    width: 100%;
+    height: 100%;
     background:
         repeating-linear-gradient(60deg,
             #fff3 0 1px,
@@ -109,7 +109,7 @@ input.url:focus {
             transparent 1px 40px);
 }
 
-body[theme="light"] .gridthing{
+body[theme="light"] .gridthing {
     background:
         repeating-linear-gradient(60deg,
             #0002 0 1px,
@@ -119,4 +119,12 @@ body[theme="light"] .gridthing{
             transparent 1px 40px);
 }
 
-
+.params {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:none;
+}

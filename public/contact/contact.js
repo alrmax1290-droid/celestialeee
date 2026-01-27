@@ -12,15 +12,16 @@ document.write(`
   <link rel="stylesheet" href="/assets/css/home.css" />
   <style>
 button {
-    width:130px;
+    width:auto;
     border-radius:5px;
-    padding:7px;
+    padding:10px;
     background:var(--button);
     color:var(--color);
     border:none;
     appearance:none;
     font-family:'Inter',sans-serif;
     text-align:center;
+    max-width:200px;
 }
   </style>
 </head>
@@ -29,7 +30,7 @@ button {
 <div align="center">
 <h1>what do you wanna do?</h1>
 <button onclick="window.location.href='/tab.html?autofill=https://soundcloud.com'">listen to music</button>
-<button onclick="window.location.href='/tab.html?autofill=https://cineby.gd'">watch movies</button>
+<button onclick="window.location.href='/tab.html?autofill=https://cineby.gd'">watch movies & tv shows</button>
 </div>
 </body>
 <script src="/assets/js/theme.js"></script>

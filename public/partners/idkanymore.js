@@ -8,6 +8,7 @@ document.write(`
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/assets/img/logo.png" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
     <meta name="Drew's Learning Academy">
     <meta content="Drew's Learning Academy | Edison, NJ" property="og:title">
     <meta
@@ -15,7 +16,12 @@ document.write(`
 </head>
 
 <body theme="default">
+<div align="center">
+<h1 id="titlething" style="font-weight:500;">SLQNT IS IN THE FILES</h1>
+<div class="big-ep-list"> <!--release the files-->
 
+</div>
+</div>
 </body>
 <script src="/assets/js/theme.js"></script>
 </html>
