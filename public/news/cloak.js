@@ -32,8 +32,9 @@ document.write(`
     <option value="new">Newest</option>
   </select>
 </div>
+<div id="idk"></div> <!--pinned-->
 
-<div class="gs"></div>
+<div class="gs"></div> <!--game list-->
 
 <script src="/assets/js/newscards.js"></script>
 </body>
