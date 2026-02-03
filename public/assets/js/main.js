@@ -1,3 +1,6 @@
+import storage from './storage.js'; // make storage.subcommand() usable everywhere
+window.storage = storage;
+
 // homepage
 // document.title = "celestial.";
 // const h1 = document.querySelector('#main');
