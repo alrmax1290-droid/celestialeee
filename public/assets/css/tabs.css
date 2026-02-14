@@ -363,10 +363,10 @@ select {
 }
 
 #sidenav {
-  position:fixed;
-  height:100%;
+  position:relative, fixed;
+  height: calc(75vh - 100px);
   float:left;
-  padding:17px;
+  padding:16px;
   border-right:1px solid var(--border);
   display:flex;
   flex-direction: column;
@@ -383,3 +383,8 @@ select {
   border-radius:7px;
   border:1px solid var(--border);
 }
+
+#browsing, #appear, #ext, #misc {
+  display:none;
+}
+

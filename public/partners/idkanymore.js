@@ -58,6 +58,46 @@ body[theme="light"] .gridthing {
             #0002 0 1px,
             transparent 1px 40px);
 }
+
+body[theme="midnight"] .gridthing {
+  background:
+    repeating-linear-gradient(60deg,
+      rgba(80, 140, 255, 0.15) 0 1px,
+      transparent 1px 40px),
+    repeating-linear-gradient(-60deg,
+      rgba(80, 140, 255, 0.15) 0 1px,
+      transparent 1px 40px);
+}
+
+body[theme="pisscolorlmao"] .gridthing {
+  background:
+    repeating-linear-gradient(60deg,
+      rgba(173, 173, 67, 0.18) 0 1px,
+      transparent 1px 40px),
+    repeating-linear-gradient(-60deg,
+      rgba(173, 173, 67, 0.18) 0 1px,
+      transparent 1px 40px);
+}
+
+body[theme="gradientblue"] .gridthing {
+  background:
+    repeating-linear-gradient(60deg,
+      rgba(73, 153, 219, 0.18) 0 1px,
+      transparent 1px 40px),
+    repeating-linear-gradient(-60deg,
+      rgba(73, 153, 219, 0.18) 0 1px,
+      transparent 1px 40px);
+}
+
+body[theme="eww"] .gridthing {
+  background:
+    repeating-linear-gradient(60deg,
+      rgba(255, 255, 255, 0.51) 0 1px,
+      transparent 1px 40px),
+    repeating-linear-gradient(-60deg,
+      rgba(255, 255, 255, 0.385) 0 1px,
+      transparent 1px 40px);
+}
         </style>
 </head>
 

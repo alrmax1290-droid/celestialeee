@@ -67,3 +67,44 @@ body[theme="quasar"] {
   --input: rgba(255, 255, 255, 0.06);
   --pallet2: #355172;
 }
+
+body[theme="ccm"] {
+  --background: #1A1B26;
+  --color: #CAD3F5;
+  --pallet: #11111b;
+  --pallet-hover: #181825;
+  --button: #313244;
+  --border: rgba(202, 211, 245, 0.229);
+  --input: rgba(202, 211, 245, 0.06);
+  --pallet2: #24283b;
+}
+
+body[theme="frappe"] {
+  --background: #303446;
+  --color: #C6D0F5;
+  --pallet: #292C3C;
+  --pallet-hover: #414559;
+  --button: #7487b5;
+  --border: rgba(198, 208, 245, 0.08);
+  --input: rgba(198, 208, 245, 0.06);
+  --pallet2: #3A3F5A;
+}
+
+body[theme="eww"] {
+  background: url("/assets/img/bro.png") no-repeat center center fixed;
+  background-size: cover;
+  --background: #ffc0da;
+  --color: white;
+
+  --pallet: #ffd6e7;
+  --pallet-hover: #ffbdd8;
+
+  --button: #ff6fa5;
+
+  --border: rgba(74, 42, 58, 0.12);
+  --input: rgba(74, 42, 58, 0.06);
+
+  --pallet2: #f7a8c4;
+  --bg-match: #4a4a4a71;
+}
+

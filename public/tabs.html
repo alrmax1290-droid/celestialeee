@@ -130,7 +130,7 @@
       "https://search.brave.com/search?q=%s"
 
 
-    setProxy(localStorage.getItem("pr0xy") || "violet")
+    setProxy(localStorage.getItem("pr0xy") || "scram")
 
 
     setWisp((location.protocol === "https:" ? "wss://" : "ws://") + location.host + "/wisp/");
@@ -188,39 +188,48 @@
       <p id="close" onclick="close();"
         style="font-size:40px;top:0;right:0;position:absolute;margin:15px;cursor:pointer;"><i class="bx bx-x"></i></p>
       <div id="sidenav">
-        <a href="#">Cl<span>oak</span>ing</a>
-        <a href="#">P<span>r</span>o<span>x</span>y</a>
-        <a href="#">Appearance</a>
-        <a href="#">Extensions</a>
-        <a href="#">Misc</a>
+        <a href="#cloak" onclick="show('cloak'); return false;">Cl<span>oak</span>ing</a>
+        <a href="#browsing" onclick="show('browsing'); return false;">P<span>r</span>o<span>x</span>y</a>
+        <a href="#appear" onclick="show('appear'); return false;">Appearance</a>
+        <a href="#ext" onclick="show('ext'); return false;">Extensions</a>
+        <a href="#misc" onclick="show('misc'); return false;">Misc</a>
       </div>
-      <div id="cloak"></div>
-      <div id="browsing">
-      <label>change transport: </label><select class="select" id="tselect">
-        <option value="epoxy" selected>epoxy</option>
-        <option value="libcurl">libcurl</option>
-      </select>
-      <br>
-      <br>
-      <label>change pr<span>o</span>xy: </label><select class="select" id="pr0xySelect">
-        <option value="violet" selected>ult<span>ra</span>vi<span>ol</span>et</option>
-        <option value="scram">sc<span>ramj</span>et</option>
-      </select>
+      <div class="stuff">
+        <div id="cloak">
+          nothing here, yet!
+        </div>
+        <div id="browsing">
+          <label>change transport: </label><select class="select" id="tselect">
+            <option value="epoxy" selected>epoxy</option>
+            <option value="libcurl">libcurl</option>
+          </select>
+          <br>
+          <br>
+          <label>change pr<span>o</span>xy: </label><select class="select" id="pr0xySelect">
+            <option value="violet" selected>ult<span>ra</span>vi<span>ol</span>et</option>
+            <option value="scram">sc<span>ramj</span>et</option>
+          </select>
+        </div>
+        <div id="appear">
+          <label>select a theme: </label><select id="themepicker">
+            <option value="default" style="color:white;background:black;" selected>default</option>
+            <option value="light" style="color:black;background:#f5f5f5;">light</option>
+            <option value="midnight" style="color:white;background:darkblue;">midnight blue</option>
+            <option value="mocha" style="color:white;background:rgb(24, 18, 14);">mocha</option>
+            <option value="pisscolorlmao" style="color:#adad43;background:#222222;">jmw v6</option>
+            <option value="quasar" style="color:white;background:rgb(73, 153, 219);">quasar</option>
+            <option value="ccm" style="color:white;background:#1A1B26;">catppuccin mocha</option>
+            <option value="frappe" style="color:#D9E0EE;background:#0D0D1F;">catppuccin frappe</option>
+            <option value="eww" style="color:white;background:pink;" disabled>secret theme...</option>
+          </select>
+        </div>
+        <div id="ext">
+          nothing here, yet!
+        </div>
+        <div id="misc">
+          nothing here, yet!
+        </div>
       </div>
-      <br>
-      <div id="appear">
-      <label>select a theme: </label><select id="themepicker">
-        <option value="default" style="color:white;background:black;" selected>default</option>
-        <option value="light" style="color:black;background:#f5f5f5;">light</option>
-        <option value="midnight" style="color:white;background:darkblue;">midnight blue</option>
-        <option value="mocha" style="color:white;background:rgb(24, 18, 14);">mocha</option>
-        <option value="pisscolorlmao" style="color:#adad43;background:#222222;">jmw v6</option>
-        <option value="quasar" style="color:white;background:rgb(73, 153, 219);">quasar</option>
-      </select>
-      </div>
-      <div id="ext"></div>
-      <br>
-      <div id="misc"></div>
     </div>
   </div>
   </div>
@@ -228,10 +237,10 @@
   <nav>
     <div id="tabs">
     </div>
-        <button id="new-tab-btn" aria-label="new tab" title="new tab">
+    <button id="new-tab-btn" aria-label="new tab" title="new tab">
 
-        <i class='bx bx-plus'></i>
-      </button>
+      <i class='bx bx-plus'></i>
+    </button>
   </nav>
   <div class="tabthing">
     <form id="form">
@@ -257,22 +266,23 @@
   </script>
 </body>
 <script src="/assets/js/theme.js"></script>
+<script src="/assets/js/s.js"></script>
 <script src="/assets/js/picker.js"></script>
 <script src="/assets/js/func.js"></script>
 <script src="/assets/js/moneymouthemoji.js"></script>
 <script type="module" src="/assets/js/ext.mjs"></script>
 <script>
   function setting() {
-  document.getElementById('settings').style.display = 'block';
-  document.querySelector('.settings-bg').style.display = 'block';
-}
+    document.getElementById('settings').style.display = 'block';
+    document.querySelector('.settings-bg').style.display = 'block';
+  }
 
-function exitSetting() {
-  document.getElementById('settings').style.display = 'none';
-  document.querySelector('.settings-bg').style.display = 'none';
-}
+  function exitSetting() {
+    document.getElementById('settings').style.display = 'none';
+    document.querySelector('.settings-bg').style.display = 'none';
+  }
 
-document.getElementById('close').addEventListener('click', exitSetting);
+  document.getElementById('close').addEventListener('click', exitSetting);
 </script>
 
 </html>

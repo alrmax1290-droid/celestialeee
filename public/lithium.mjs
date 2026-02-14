@@ -326,7 +326,6 @@ export class Tab {
 		if (currentTab !== this.tabNumber) return;
 
 		addressInput.value = url;
-		document.title = title || "celestial";
 
 
 	}
