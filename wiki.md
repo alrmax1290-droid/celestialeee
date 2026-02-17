@@ -44,6 +44,10 @@ alert('official example');
 #### Done! It should look like this:
 <h1 align="center"><img width="600" src="public/assets/img/wiki/img5.png" /></h1>
 
+
+#### And it should give you an output like this:
+<h1 align="center"><img width="600" src="public/assets/img/wiki/img7.png" /></h1>
+
 #### It will show the status of the script. To remove, press the remove button right near it.
 <h1 align="center"><img width="600" src="public/assets/img/wiki/img6.png" /></h1>
 
