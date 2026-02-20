@@ -25,6 +25,11 @@ document.write(`
     <option value="2player">2 Player</option>
     <option value="adventure">Adventure</option>
     <option value="horror">Horror</option>
+    <option value="shooter">Shooter</option>
+    <option value="puzzle">Puzzle</option>
+    <option value="port">Web Ports</option>
+    <option value="rhythm">Rhythm</option>
+    <option value="platformer">Platformer</option>
     <option value="other">Other</option>
   </select>
   <select>

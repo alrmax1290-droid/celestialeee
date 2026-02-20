@@ -3,7 +3,7 @@
 		"name": "!! SUGGEST A GAME",
         "img": "/assets/img/gms/!!suggest.png",
         "type": "exclusive",
-		"url": "https://forms.google.com",
+		"url": "https://forms.gle/ELsciiPdpuofGk4v8",
         "categories": ["other"],
         "source": "proxied"
 	},
@@ -12,7 +12,7 @@
         "img": "/assets/img/gms/deltarune.png",
         "type": "exclusive",
 		"url": "/assets/src/deltarune/index.html#deltarune",
-        "categories": ["indie", "rpg"],
+        "categories": ["indie", "rpg", "port"],
         "source": "local"
 	},
     {
@@ -52,7 +52,7 @@
         "img": "/assets/img/gms/batim.png",
         "type": "exclusive",
 		"url": "/assets/src/bendih/index.html#bendy",
-        "categories": ["adventure", "horror", "indie"],
+        "categories": ["adventure", "horror", "indie", "port"],
         "source": "local"
 	},
     {
@@ -60,7 +60,7 @@
         "img": "/assets/img/gms/ata.png",
         "type": "exclusive",
 		"url": "https://raw.githack.com/genizy/web-port/refs/heads/main/amanda-the-adventurer/index.html",
-        "categories": ["indie", "horror"],
+        "categories": ["indie", "horror", "port"],
         "source": "proxied"
 	},
     {
@@ -76,7 +76,7 @@
         "img": "/assets/img/gms/gtag.png",
         "type": "exclusive",
 		"url": "/assets/src/gtag/index.html#gtag",
-        "categories": ["adventure", "2player", "sandbox"],
+        "categories": ["adventure", "2player", "sandbox", "port"],
         "source": "local"
 	},
     {
@@ -84,7 +84,7 @@
         "img": "/assets/img/gms/an.png",
         "type": "exclusive",
 		"url": "/assets/src/arthurs-nightmare/index.html#arthurs-nightmare",
-        "categories": ["horror"],
+        "categories": ["horror", "port"],
         "source": "local"
 	},
     {
@@ -92,15 +92,255 @@
         "img": "/assets/img/gms/vicecity.png",
         "type": "exclusive",
 		"url": "/assets/src/vice/index.html#vicecity",
-        "categories": ["adventure", "sandbox"],
+        "categories": ["adventure", "sandbox", "port"],
         "source": "local"
 	},
     {
 		"name": "Five Nights At Freddy's",
         "img": "/assets/img/gms/fnaf.png",
-        "type": "exclusive",
+        "type": "regular",
 		"url": "/assets/src/fnaf/1/index.html#fnaf",
-        "categories": ["horror"],
+        "categories": ["horror", "port"],
         "source": "local"
+	},
+    {
+		"name": "Five Nights At Freddy's 2",
+        "img": "/assets/img/gms/fnaf2.png",
+        "type": "regular",
+		"url": "/assets/src/fnaf/2/index.html#fnaf2",
+        "categories": ["horror", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Five Nights At Freddy's 3",
+        "img": "/assets/img/gms/fnaf3.png",
+        "type": "regular",
+		"url": "/assets/src/fnaf/3/index.html#fnaf3",
+        "categories": ["horror", "port"],
+        "source": "local"
+	},
+    {
+        "name": "Five Nights At Freddy's 4",
+        "img": "/assets/img/gms/fnaf4.png",
+        "type": "regular",
+        "url": "/assets/src/fnaf/4/index.html#fnaf4",
+        "categories": ["horror", "port"],
+        "source": "local"
+    },
+    {
+        "name": "Five Nights At Freddy's Sister Location",
+        "img": "/assets/img/gms/fnafsl.png",
+        "type": "exclusive",
+        "url": "/assets/src/fnaf/sl/index.html#fnafsl",
+        "categories": ["horror", "port"],
+        "source": "local"
+    },
+    {
+        "name": "Five Nights At Freddy's World",
+        "img": "/assets/img/gms/fnafworld.png",
+        "type": "exclusive",
+        "url": "/assets/src/fnaf/world/index.html#fnafworld",
+        "categories": ["horror", "port"],
+        "source": "local"
+    },
+    {
+        "name": "Five Nights At Ep-stein's",
+        "img": "/assets/img/gms/fnae.png",
+        "type": "exclusive",
+        "url": "/assets/src/fnae/index.html#fnae",
+        "categories": ["horror", "port"],
+        "source": "local"
+    },
+    {
+        "name": "Five Nights At Winstons",
+        "img": "/assets/img/gms/fnaw.png",
+        "type": "exclusive",
+        "url": "/assets/src/fnaw/index.html#fnaw",
+        "categories": ["horror", "port"],
+        "source": "local"
+    },
+    {
+        "name": "Five Nights at Freddy's Ultimate Custom Night",
+        "img": "/assets/img/gms/ucn.png",
+        "type": "exclusive",
+        "url": "/assets/src/fnaf/ucn/index.html#ucn",
+        "categories": ["horror", "port"],
+        "source": "local"
+    },
+    {
+        "name": "Five Nights At Freddy's Pizzeria Simulator",
+        "img": "/assets/img/gms/fnafpizza.png",
+        "type": "exclusive",
+        "url": "/assets/src/fnaf/pizza/index.html#fnafpizza",
+        "categories": ["horror", "port"],
+        "source": "local"
+    },
+    {
+		"name": "Football Bros",
+        "img": "/assets/img/gms/football-bros.png",
+        "type": "exclusive",
+		"url": "/assets/src/football-bros/index.html#football-bros",
+        "categories": ["sports"],
+        "source": "local"
+	},
+    {
+		"name": "Fortnite",
+        "img": "/assets/img/gms/fortnite.png",
+        "type": "exclusive",
+		"url": "https://shorturl.at/dA8EY",
+        "categories": ["shooter"],
+        "source": "proxied"
+	},
+    {
+        "name": "Friday Night Funkin'",
+        "img": "/assets/img/gms/fnf.png",
+        "type": "exclusive",
+        "url": "https://uploads.ungrounded.net/alternate/1528000/1528775_alternate_113347_r119.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=668c534c39440&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
+        "categories": ["rhythm", "indie"],
+        "source": "proxied"
+    },
+    {
+        "name": "Geometry Dash Lite",
+        "img": "/assets/img/gms/gd-lite.png",
+        "type": "exclusive",
+        "url": "/assets/src/gd-lite/index.html#geometrydash",
+        "categories": ["rhythm", "platformer"],
+        "source": "local"
+    },
+    {
+        "name": "Genshin Impact",
+        "img": "/assets/img/gms/genshin.png",
+        "type": "exclusive",
+        "url": "/assets/src/ngg/genshin/index.html#genshin",
+        "categories": ["rpg", "adventure"],
+        "source": "local"
+    },
+    {
+        "name": "Hollow Knight",
+        "img": "/assets/img/gms/hk.png",
+        "type": "exclusive",
+        "url": "/assets/src/hk/index.html#hollowknight",
+        "categories": ["adventure", "indie", "port"],
+        "source": "local"
+    },
+    {
+        "name": "Hollow Knight Silksong",
+        "img": "/assets/img/gms/hks.png",
+        "type": "exclusive",
+        "url": "/assets/src/hk/ss/index.html#hollowknight-silksong",
+        "categories": ["adventure", "indie", "port"],
+        "source": "local"
+    },
+    {
+        "name": "Minecraft 1.5.2",
+        "img": "/assets/img/gms/mc152.png",
+        "type": "exclusive",
+        "url": "/assets/src/mc/152/index.html#minecraft",
+        "categories": ["sandbox", "adventure"],
+        "source": "local"
+    },
+    {
+        "name": "Minecraft 1.8.8",
+        "img": "/assets/img/gms/mc188.png",
+        "type": "exclusive",
+        "url": "/assets/src/mc/188/index.html#mc188",
+        "categories": ["sandbox", "adventure"],
+        "source": "local"
+    },
+    {
+        "name": "Minecraft 1.12.2",
+        "img": "/assets/img/gms/mc1122.png",
+        "type": "exclusive",
+        "url": "/assets/src/mc/1122/index.html#mc1122",
+        "categories": ["sandbox", "adventure"],
+        "source": "local"
+    },
+    {
+        "name": "Minecraft 1.21.4",
+        "img": "/assets/img/gms/mc1214.png",
+        "type": "exclusive",
+        "url": "/assets/src/mc/1214/index.html#mc1214",
+        "categories": ["sandbox", "adventure"],
+        "source": "local"
+    },
+    {
+        "name": "Portal; Flash Version",
+        "img": "/assets/img/gms/portal.png",
+        "type": "regular",
+        "url": "https://raw.githack.com/BinBashBanana/gfiles/master/gfiles/flash/index.html?swf=portal.swf",
+        "categories": ["puzzle", "adventure"],
+        "source": "proxied"
+    },
+    {
+        "name": "Slender; The Eight Pages",
+        "img": "/assets/img/gms/slender.png",
+        "type": "exclusive",
+        "url": "/assets/src/slenderman/index.html#slenderman",
+        "categories": ["horror", "port"],
+        "source": "local"
+    },
+    {
+        "name": "Half-Life",
+        "img": "/assets/img/gms/hl.png",
+        "type": "exclusive",
+        "url": "https://hl-ecru.vercel.app/",
+        "categories": ["adventure", "port"],
+        "source": "proxied"
+    },
+    {
+		"name": "Basket Bros",
+        "img": "/assets/img/gms/basketbros.png",
+        "type": "regular",
+		"url": "/assets/src/basket-bros/index.html#basket-bros",
+        "categories": ["sports"],
+        "source": "local"
+	},
+    {
+		"name": "Kart Bros",
+        "img": "/assets/img/gms/kart-bros.png",
+        "type": "regular",
+		"url": "/assets/src/kart-bros/index.html#kart-bros",
+        "categories": ["sports"],
+        "source": "local"
+	},
+    {
+		"name": "Basket Random",
+        "img": "/assets/img/gms/basket-random.png",
+        "type": "regular",
+		"url": "/assets/src/basket-random/index.html#basket-random",
+        "categories": ["sports"],
+        "source": "local"
+	},
+    {
+		"name": "Soccer Random",
+        "img": "/assets/img/gms/soccer-random.png",
+        "type": "regular",
+		"url": "/assets/src/soccer-random/index.html#soccer-random",
+        "categories": ["sports"],
+        "source": "local"
+	},
+    {
+		"name": "Boxing Random",
+        "img": "/assets/img/gms/boxing-random.png",
+        "type": "regular",
+		"url": "/assets/src/boxing-random/index.html#boxing-random",
+        "categories": ["sports"],
+        "source": "local"
+	},
+    {
+		"name": "Volley Random",
+        "img": "/assets/img/gms/volley-random.png",
+        "type": "regular",
+		"url": "/assets/src/volley-random/index.html#volley-random",
+        "categories": ["sports"],
+        "source": "local"
+	},
+    {
+		"name": "Super Dark Deception",
+        "img": "/assets/img/gms/super-dark-deception.png",
+        "type": "exclusive",
+		"url": "https://kdata1.com/2022/12/super-dark-deception/?kbhgames",
+        "categories": ["horror"],
+        "source": "proxied"
 	}
 ]
