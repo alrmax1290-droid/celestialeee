@@ -3,6 +3,9 @@ services:
     name: education-4-all
     env: node
     plan: free
+    envVars:
+      - key: PORT
+        value: "3000"
     startCommand: |
       npm cache clean --force
       rm -rf node_modules package-lock.json
