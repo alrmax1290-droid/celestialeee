@@ -7,5 +7,4 @@ services:
       npm cache clean --force
       rm -rf node_modules package-lock.json
       npm install @mercuryworkshop/epoxy-transport @mercuryworkshop/libcurl-transport @mercuryworkshop/bare-mux @mercuryworkshop/wisp-js @mercuryworkshop/scramjet express node-fetch dotenv sanitize-html cors
-      npm run build
       node index.js
