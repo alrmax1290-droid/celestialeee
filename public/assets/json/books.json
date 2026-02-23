@@ -28,7 +28,7 @@
         "img": "/assets/img/gms/8ball.png",
         "type": "regular",
 		"url": "https://prod-web-pool.miniclip.com/mc?localmc",
-        "categories": ["sports", "strategy"],
+        "categories": ["sports", "puzzle"],
         "source": "proxied"
 	},
     {
@@ -376,12 +376,12 @@
         "source": "local"
     },
     {
-		"name": "",
-        "img": "/assets/img/gms/.png",
+		"name": "Bad Parenting",
+        "img": "/assets/img/gms/bad-parenting.png",
         "type": "exclusive",
-		"url": "",
-        "categories": [""],
-        "source": ""
+		"url": "https://badparentingame.io/play/bad-parenting/",
+        "categories": ["horror"],
+        "source": "local"
 	},
     {
         "name": "The Legend of Zelda: Breath of the Wild",
@@ -426,7 +426,7 @@
     {
         "name": "The Legend of Zelda: Phantom Hourglass",
         "img": "/assets/img/gms/ph.png",
-        "type": "exclusive",
+        "type": "regular",
         "url": "/assets/src/emulated/n64/zelda/ph/index.html#ph",
         "categories": ["adventure", "rpg"],
         "source": "local"
@@ -434,7 +434,7 @@
     {
         "name": "The Legend of Zelda: Spirit Tracks",
         "img": "/assets/img/gms/st.png",
-        "type": "exclusive",
+        "type": "regular",
         "url": "/assets/src/emulated/n64/zelda/st/index.html#st",
         "categories": ["adventure", "rpg"],
         "source": "local"
@@ -442,7 +442,7 @@
     {
 		"name": "Sandboxels",
         "img": "/assets/img/tls/sbx.png",
-        "type": "exclusive",
+        "type": "regular",
 		"url": "https://sandboxels.r74n.com/",
         "categories": ["sandbox"],
         "source": "proxied"
@@ -461,6 +461,270 @@
         "type": "exclusive",
 		"url": "/assets/src/emulated/psp/danganronpa/index.html#danganronpa",
         "categories": ["horror", "mystery"],
+        "source": "local"
+	},
+    {
+		"name": "Baldi's Basics",
+        "img": "/assets/img/gms/baldis-basics.png",
+        "type": "exclusive",
+		"url": "/assets/src/baldi/index.html#baldis-basics",
+        "categories": ["puzzle", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Baldi's Basics Field Trip",
+        "img": "/assets/img/gms/baldis-basics-field-trip.png",
+        "type": "exclusive",
+		"url": "/assets/src/baldi/camping/index.html#baldis-basics-field-trip",
+        "categories": ["puzzle", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Baldi's Basics Plus",
+        "img": "/assets/img/gms/baldi-plus.png",
+        "type": "exclusive",
+		"url": "/assets/src/baldi/plus/index.html#baldis-plus",
+        "categories": ["puzzle", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Baldi's Basics; The Ultra Decompile",
+        "img": "/assets/img/gms/baldi-tud.png",
+        "type": "exclusive",
+		"url": "/assets/src/baldi/tud/index.html#baldis-ultra-decompile",
+        "categories": ["puzzle", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Baldi's Basics; Remastered",
+        "img": "/assets/img/gms/baldi-remastered.png",
+        "type": "exclusive",
+		"url": "/assets/src/baldi/remastered/index.html#baldis-basics-remastered",
+        "categories": ["puzzle", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Baldi's Fun New School Ultimate",
+        "img": "/assets/img/gms/baldi-fnsu.png",
+        "type": "exclusive",
+		"url": "/assets/src/baldi/fnsu/index.html#baldis-fun-new-school-ultimate",
+        "categories": ["puzzle", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Buckshot Roulette",
+        "img": "/assets/img/gms/buckshot-roulette.png",
+        "type": "exclusive",
+		"url": "/assets/src/buckshot-roulette/index.html#buckshot-roulette",
+        "categories": ["puzzle", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Bowmasters",
+        "img": "/assets/img/gms/bowmasters.png",
+        "type": "regular",
+		"url": "https://raw.githack.com/bubbls/youtube-playables/refs/heads/main/bowmasters/index.html",
+        "categories": ["2player", "port"],
+        "source": "proxied"
+	},
+    {
+		"name": "Bouncemasters",
+        "img": "/assets/img/gms/bouncemasters.png",
+        "type": "regular",
+		"url": "https://edu.aptutorfinder.com/assets/storage/html/bouncemasters",
+        "categories": ["other", "port", "platformer"],
+        "source": "proxied"
+	},
+    {
+		"name": "Bloodmoney",
+        "img": "/assets/img/gms/bloodmoney.png",
+        "type": "exclusive",
+		"url": "/assets/src/bloodmoney/index.html#bloodmoney",
+        "categories": ["adventure", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Bergentruck 201x",
+        "img": "/assets/img/gms/bergentruck-201x.png",
+        "type": "exclusive",
+		"url": "/assets/src/bergentruck/index.html#bergentruck-201x",
+        "categories": ["adventure", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Class of '09",
+        "img": "/assets/img/gms/class-of-09.png",
+        "type": "regular",
+		"url": "https://mathteachersforhire.shop/extra/co09loader/C09/index.html",
+        "categories": ["other", "indie", "port"],
+        "source": "proxied"
+	},
+    {
+		"name": "Class of '09; The Re-up",
+        "img": "/assets/img/gms/class-of-09-re-up.png",
+        "type": "regular",
+		"url": "https://mathteachersforhire.shop/extra/co09loader/C09RU/index.html",
+        "categories": ["other", "indie", "port"],
+        "source": "proxied"
+	},
+    {
+		"name": "Class of '09; The Flipside",
+        "img": "/assets/img/gms/class-of-09-flipside.png",
+        "type": "regular",
+		"url": "https://mathteachersforhire.shop/extra/co09loader/C09FS/index.html",
+        "categories": ["other", "indie", "port"],
+        "source": "proxied"
+	},
+    {
+		"name": "Class of '09 Demo",
+        "img": "/assets/img/gms/class-of-09-demo.png",
+        "type": "regular",
+		"url": "/assets/src/class-of-09/demo/index.html#class-of-09-demo",
+        "categories": ["other", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Cuphead",
+        "img": "/assets/img/gms/cuphead.png",
+        "type": "regular",
+		"url": "/assets/src/cuphead/index.html#cuphead",
+        "categories": ["adventure", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Celeste",
+        "img": "/assets/img/gms/celeste.png",
+        "type": "regular",
+		"url": "https://maddymakesgamesinc.itch.io/celesteclassic",
+        "categories": ["platformer", "indie", "port"],
+        "source": "proxied"
+	},
+    {
+		"name": "Celeste 2",
+        "img": "/assets/img/gms/celeste-2.png",
+        "type": "regular",
+		"url": "/assets/src/celeste-2/index.html#celeste-2",
+        "categories": ["platformer", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Doki Doki Literature Club",
+        "img": "/assets/img/gms/ddlc.png",
+        "type": "regular",
+		"url": "/assets/src/ddlc/index.html#doki-doki-literature-club",
+        "categories": ["adventure", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Osu!",
+        "img": "/assets/img/gms/osu.png",
+        "type": "exclusive",
+		"url": "/assets/src/osu/index.html#osu",
+        "categories": ["music", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Deltatraveler",
+        "img": "/assets/img/gms/deltatraveler.png",
+        "type": "exclusive",
+		"url": "/assets/src/deltatravel/index.html#deltatraveler",
+        "categories": ["adventure", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Clash Of Vikings",
+        "img": "/assets/img/gms/cov.png",
+        "type": "regular",
+		"url": "/assets/src/evil-clash/index.html#clash-of-vikings",
+        "categories": ["puzzle", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Deadseat",
+        "img": "/assets/img/gms/deadseat.png",
+        "type": "regular",
+		"url": "/assets/src/deadseat/index.html#deadseat",
+        "categories": ["horror", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Deadplate",
+        "img": "/assets/img/gms/deadplate.png",
+        "type": "regular",
+		"url": "/assets/src/deadplate/index.html#deadplate",
+        "categories": ["horror", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Undertale (broken)",
+        "img": "/assets/img/gms/ut.png",
+        "type": "exclusive",
+		"url": "/assets/src/ut/index.html#undertale",
+        "categories": ["adventure", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Balatro",
+        "img": "/assets/img/gms/balatro.png",
+        "type": "exclusive",
+		"url": "/assets/src/balatro/index.html#balatro",
+        "categories": ["puzzle", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "24/7 Chess",
+        "img": "/assets/img/gms/247chess.png",
+        "type": "exclusive",
+		"url": "/assets/src/chess/index.html#247-chess",
+        "categories": ["puzzle", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "24/7 Blackjack",
+        "img": "/assets/img/gms/247blackjack.png",
+        "type": "exclusive",
+		"url": "/assets/src/blackjack/index.html#247-blackjack",
+        "categories": ["puzzle", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "24/7 Poker",
+        "img": "/assets/img/gms/247poker.png",
+        "type": "exclusive",
+		"url": "/assets/src/poker/index.html#247-poker",
+        "categories": ["puzzle", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Buildnow.gg",
+        "img": "/assets/img/gms/buildnowgg.png",
+        "type": "exclusive",
+		"url": "https://www.crazygames.com/embed/buildnow-gg",
+        "categories": ["2player", "sandbox", "shooter"],
+        "source": "proxied"
+	},
+    {
+		"name": "Fortzone Battle Royale",
+        "img": "/assets/img/gms/fortzone.png",
+        "type": "regular",
+		"url": "https://www.silvergames.com/en/fortzone-battle-royale/gameframe",
+        "categories": ["2player", "sandbox", "shooter"],
+        "source": "local"
+	},
+    {
+		"name": "ULTRAKILL",
+        "img": "/assets/img/gms/ultrakill.png",
+        "type": "exclusive",
+		"url": "/assets/src/ultrakill/index.html#ultrakill",
+        "categories": ["adventure", "indie", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Totally Accurate Battle Simulator (TABS)",
+        "img": "/assets/img/gms/tabs.png",
+        "type": "regular",
+		"url": "/assets/src/tabs/index.html#totally-accurate-battle-simulator",
+        "categories": ["puzzle", "indie"],
         "source": "local"
 	}
 ]
