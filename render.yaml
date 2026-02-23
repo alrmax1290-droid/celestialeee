@@ -1,6 +1,11 @@
- services:
+services:
   - type: web
     name: education-4-all
     env: node
     plan: free
-    startCommand: npm install && npm run build && node server.js
+    startCommand: |
+      npm cache clean --force
+      rm -rf node_modules package-lock.json
+      npm install @mercuryworkshop/epoxy-transport @mercuryworkshop/libcurl-transport @mercuryworkshop/bare-mux @mercuryworkshop/wisp-js @mercuryworkshop/scramjet express node-fetch dotenv sanitize-html cors
+      npm run build
+      node index.js
