@@ -70,6 +70,11 @@ server.on("upgrade", (req, socket, head) => {
   }
 });
 
+// keeping render deploy alive, only for render deploys 
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 server.listen(3000, () => {
   console.log("running on port 3000");
   console.log("http://localhost:3000");

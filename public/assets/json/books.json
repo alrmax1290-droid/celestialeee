@@ -800,6 +800,14 @@
         "source": "proxied"
 	},
     {
+		"name": "Jumbo Mario",
+        "img": "/assets/img/gms/jumbomario.png",
+        "type": "regular",
+		"url": "/assets/src/jumbo-mario/index.html#jumbo-mario",
+        "categories": ["platformer", "indie"],
+        "source": "local"
+	},
+    {
 		"name": "!! SUGGEST A GAME",
         "img": "/assets/img/gms/!!suggest.png",
         "type": "exclusive",
