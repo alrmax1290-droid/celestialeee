@@ -76,7 +76,7 @@ app.get('/health', (req, res) => {
   res.status(200).send('OK');
 });
 
-server.listen(3000, () => {
-  console.log("running on port 3000");
-  console.log("http://localhost:3000");
+server.listen(5439, () => {
+  console.log("running on port 5439");
+  console.log("http://localhost:5439");
 });
