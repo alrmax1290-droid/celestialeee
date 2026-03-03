@@ -110,9 +110,10 @@ body[theme="eww"] .gridthing {
 <div align="center">
 <div class="pluh">
 <div class="gradientthing">
-<h1>what do you wanna do?</h1>
-<button onclick="window.location.href='/tab.html?autofill=https://soundcloud.com'">listen to music</button>
-<button onclick="window.location.href='/tab.html?autofill=https://cineby.gd'">watch movies & tv shows</button>
+<h1>media menu</h1>
+<button onclick="window.location.href='/tab.html?autofill=https://soundcloud.com'">access music</button>
+<button onclick="window.location.href='/tab.html?autofill=https://cineby.gd'">access movies</button>
+<button style="cursor:not-allowed;background:var(--pallet2);" onclick="console.log('soon');">access chat (soon)</button>
 </div>
 </div>
 </div>
