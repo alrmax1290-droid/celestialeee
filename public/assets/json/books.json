@@ -373,7 +373,7 @@
         "type": "exclusive",
 		"url": "https://badparentingame.io/play/bad-parenting/",
         "categories": ["horror"],
-        "source": "local"
+        "source": "proxied"
 	},
     {
         "name": "The Legend of Zelda: Breath of the Wild",
@@ -699,9 +699,9 @@
 		"name": "Fortzone Battle Royale",
         "img": "/assets/img/gms/fortzone.png",
         "type": "regular",
-		"url": "https://www.silvergames.com/en/fortzone-battle-royale/gameframe",
+		"url": "https://www.crazygames.com/embed/fortzone-battle-royale-xkd",
         "categories": ["2player", "sandbox", "shooter"],
-        "source": "local"
+        "source": "proxied"
 	},
     {
 		"name": "ULTRAKILL",
@@ -810,10 +810,106 @@
     {
 		"name": "Shift At Midnight",
         "img": "/assets/img/gms/shiftatmidnight.png",
-        "type": "regular",
+        "type": "exclusive",
 		"url": "/assets/src/shift-at-midnight/index.html#shift-at-midnight",
         "categories": ["horror", "indie", "port"],
         "source": "local"
+	},
+    {
+		"name": "Super Mario 64 but with a shotgun (shotgun mario)",
+        "img": "/assets/img/gms/shotgun-mario.png",
+        "type": "exclusive",
+		"url": "/assets/src/shotgun-mario/index.html#shotgun-mario",
+        "categories": ["platformer", "indie", "shooter"],
+        "source": "local"
+	},
+    {
+		"name": "Terraria",
+        "img": "/assets/img/gms/thebigraria.png",
+        "type": "exclusive",
+		"url": "/assets/src/rraria/index.html#terraria",
+        "categories": ["indie", "adventure", "sandbox", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Pizza Tower",
+        "img": "/assets/img/gms/pizzatower.png",
+        "type": "exclusive",
+		"url": "/assets/src/pizza-tower/index.html#pizza-tower",
+        "categories": ["indie", "platformer", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Pizza Tower; Scoutdigo",
+        "img": "/assets/img/gms/pizzatowerscoutdigo.png",
+        "type": "exclusive",
+		"url": "/assets/src/pizza-tower/scoutdigo/index.html#pizza-tower-scoutdigo",
+        "categories": ["indie", "platformer", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Basketball Stars",
+        "img": "/assets/img/gms/basketballstars.png",
+        "type": "regular",
+		"url": "/assets/src/basketball-stars/index.html#basketball-stars",
+        "categories": ["sports", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Football Legends",
+        "img": "/assets/img/gms/footballlegends.png",
+        "type": "regular",
+		"url": "/assets/src/football-stars/index.html#football-legends",
+        "categories": ["sports", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Basketball Legends 2020",
+        "img": "/assets/img/gms/basketballlegends.png",
+        "type": "regular",
+		"url": "/assets/src/basketball-legends/index.html#basketball-legends",
+        "categories": ["sports", "indie", "2player"],
+        "source": "local"
+	},
+    {
+		"name": "Beach Boxing Simulator",
+        "img": "/assets/img/gms/bbs.png",
+        "type": "regular",
+		"url": "/assets/src/bbs/index.html#beach-boxing-simulator",
+        "categories": ["sports", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Battle Karts",
+        "img": "/assets/img/gms/bk.png",
+        "type": "regular",
+		"url": "/assets/src/bk/index.html#battle-karts",
+        "categories": ["sports", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Basketball Superstars",
+        "img": "/assets/img/gms/b-bs.png",
+        "type": "regular",
+		"url": "/assets/src/basketball-superstars/index.html#basketball-superstars",
+        "categories": ["sports", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Smash Karts",
+        "img": "/assets/img/gms/sk.png",
+        "type": "regular",
+		"url": "/assets/src/smash-karts/index.html#smash-karts",
+        "categories": ["sports", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Obby Roads",
+        "img": "/assets/img/gms/obbyroads.png",
+        "type": "regular",
+		"url": "https://obbyroads.io",
+        "categories": ["platformer", "indie"],
+        "source": "proxied"
 	},
     {
 		"name": "!! SUGGEST A GAME",
