@@ -81,16 +81,7 @@
       <div align="center">
         <h2>update log 03/09</h2>
       </div>
-      <p>- added 9 new games + a link doc</p>
-      <p>
-        -
-        <a
-          href="https://docs.google.com/document/d/1kaohe5rR204hcfmSgQdjzSTaq1ypAxs7tTYZ0yTGkH4/edit"
-          style="color: var(--color)"
-          target="_blank"
-          >visit our link doc</a
-        >
-      </p>
+      <p>- added 12 new games</p>
       <p>
         - join the d<span>isc</span>ord for more links!
         <a
@@ -274,10 +265,10 @@
     document.getElementById("close").addEventListener("click", exitUpdLog);
 
     window.addEventListener("load", function () {
-      if (!localStorage.getItem("updlogview2")) {
+      if (!localStorage.getItem("updlogview3")) {
         document.getElementById("update-log").style.display = "block";
         document.querySelector(".upd-bg").style.display = "block";
-        localStorage.setItem("updlogview2", "1");
+        localStorage.setItem("updlogview3", "1");
       }
     });
   </script>
