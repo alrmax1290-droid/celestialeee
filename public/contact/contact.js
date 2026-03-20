@@ -149,17 +149,17 @@ body[theme="eww"] .gridthing {
 <div class="gradientthing" align="center">
 <h1>media menu</h1>
 <div class="row">
-<div class="menu-box" onclick="/tab.html?autofill=https://app.apponfly.com/trial">
+<div class="menu-box" onclick="window.location.href='/tab.html?autofill=https://app.apponfly.com/trial'">
 <img src="/assets/img/icns/comp.png" />
 <h2>access virtual machine</h2>
 <p>access our free virtual machine.</p>
 </div>
-<div class="menu-box" onclick="/tab.html?autofill=https://music.youtube.com">
+<div class="menu-box" onclick="window.location.href='/tab.html?autofill=https://music.youtube.com'">
 <img src="/assets/img/icns/music.png" />
 <h2>listen to music</h2>
 <p>access our free virtual machine.</p>
 </div>
-<div class="menu-box" onclick="/tab.html?autofill=https://cineby.gd">
+<div class="menu-box" onclick="window.location.href='/tab.html?autofill=https://cineby.gd'">
 <img src="/assets/img/icns/pop.png" />
 <h2>watch movies</h2>
 <p>access movies, for free, no charge.</p>
