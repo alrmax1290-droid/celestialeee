@@ -138,7 +138,13 @@ function rngGame() {
   fetch("/assets/json/books.json")
     .then((res) => res.json())
     .then((games) => {
-      const available = games.filter((g) => g.url);
+      const available = games.filter(
+        (g) =>
+          g.url &&
+          g.source !== "dice" &&
+          g.name !== "!! SUGGEST A GAME" &&
+          g.name !== "! RANDOM GAME"
+      );
       const rand = available[Math.floor(Math.random() * available.length)];
       location.href =
         rand.source === "local"
