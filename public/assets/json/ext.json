@@ -34,5 +34,11 @@
         "website": ["https://youtube.com", "https://music.youtube.com", "youtube.com", "music.youtube.com"],
         "includes": "yes",
         "src": "fetch('https://raw.githubusercontent.com/JustJxrdanWasDefinetlyTaken/celestial-ext/refs/heads/main/ext/yt-adblocker.js') .then(r => r.text()) .then(t => new Function(t)());"
+    },
+    {
+        "name": "Taming.io Banner Removal",
+        "website": ["https://taming.io/", "http://taming.io", "https://taming.io", "http://taming.io/", "taming.io"],
+        "includes": "yes",
+        "src": "javascript:(function(){const wrap=document.getElementById('loading-middle-wrap');if(wrap){const children=Array.from(wrap.children);children.forEach(child=>{if(!child.innerText.includes('Loading TAMING.IO')){child.remove();}});}})();"
     }
 ]

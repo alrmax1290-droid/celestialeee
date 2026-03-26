@@ -246,6 +246,12 @@
         "categories": ["ai", "other", "popular"]
 	},
     {
+		"name": "MyInstants [soundboard]",
+        "img": "/assets/img/tls/duck.png",
+		"url": "https://myinstants.com",
+        "categories": ["other", "popular"]
+	},
+    {
 		"name": "!! SUGGEST AN APP",
         "img": "/assets/img/gms/!!suggest.png",
 		"url": "https://forms.gle/ELsciiPdpuofGk4v8",

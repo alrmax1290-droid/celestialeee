@@ -515,9 +515,9 @@
 		"name": "Bowmasters",
         "img": "/assets/img/gms/bowmasters.png",
         "type": "regular",
-		"url": "https://learn-with.jskjsv6.workers.dev/bubbls/youtube-playables/b76984e373891dc5e22fb9a7f4f784671c620420/bowmasters/index.html",
+		"url": "/assets/src/bowmasters/index.html#bowmasters",
         "categories": ["2player", "port"],
-        "source": "proxied"
+        "source": "local"
 	},
     {
 		"name": "Bouncemasters",
@@ -547,7 +547,7 @@
 		"name": "Class of '09",
         "img": "/assets/img/gms/class-of-09.png",
         "type": "regular",
-		"url": "https://mathteachersforhire.shop/extra/co09loader/C09/index.html",
+		"url": "https://mathteachersforhire.shop/games/C09/index.html",
         "categories": ["other", "indie", "port"],
         "source": "proxied"
 	},
@@ -555,7 +555,7 @@
 		"name": "Class of '09; The Re-up",
         "img": "/assets/img/gms/class-of-09-re-up.png",
         "type": "regular",
-		"url": "https://mathteachersforhire.shop/extra/co09loader/C09RU/index.html",
+		"url": "https://mathteachersforhire.shop/games/C09RU/index.html",
         "categories": ["other", "indie", "port"],
         "source": "proxied"
 	},
@@ -563,7 +563,7 @@
 		"name": "Class of '09; The Flipside",
         "img": "/assets/img/gms/class-of-09-flipside.png",
         "type": "regular",
-		"url": "https://mathteachersforhire.shop/extra/co09loader/C09FS/index.html",
+		"url": "https://mathteachersforhire.shop/games/C09FS/index.html",
         "categories": ["other", "indie", "port"],
         "source": "proxied"
 	},
@@ -571,7 +571,7 @@
 		"name": "Class of '09 Demo",
         "img": "/assets/img/gms/class-of-09-demo.png",
         "type": "regular",
-		"url": "/assets/src/class-of-09/demo/index.html#class-of-09-demo",
+		"url": "/assets/src/class-of-09-demo/index.html#class-of-09-demo",
         "categories": ["other", "indie", "port"],
         "source": "local"
 	},
@@ -612,7 +612,7 @@
         "img": "/assets/img/gms/osu.png",
         "type": "exclusive",
 		"url": "/assets/src/osu/index.html#osu",
-        "categories": ["music", "indie", "port"],
+        "categories": ["rhythm", "indie", "port"],
         "source": "local"
 	},
     {
@@ -940,7 +940,7 @@
         "img": "/assets/img/gms/motox3m.png",
         "type": "regular",
 		"url": "/assets/src/moto-x3m/index.html#moto-x3m",
-        "categories": ["racing", "indie"],
+        "categories": ["adventure", "indie"],
         "source": "local"
 	},
     {
@@ -948,7 +948,7 @@
         "img": "/assets/img/gms/motox3m2.png",
         "type": "regular",
 		"url": "/assets/src/moto-x3m/2/index.html#moto-x3m-2",
-        "categories": ["racing", "indie"],
+        "categories": ["adventure", "indie"],
         "source": "local"
 	},
     {
@@ -956,7 +956,7 @@
         "img": "/assets/img/gms/motox3m3.png",
         "type": "regular",
 		"url": "/assets/src/moto-x3m/3/index.html#moto-x3m-3",
-        "categories": ["racing", "indie"],
+        "categories": ["adventure", "indie"],
         "source": "local"
 	},
     {
@@ -964,7 +964,7 @@
         "img": "/assets/img/gms/motox3m-pool-party.png",
         "type": "regular",
 		"url": "/assets/src/moto-x3m/pool-party/index.html#moto-x3m-pool-party",
-        "categories": ["racing", "indie"],
+        "categories": ["adventure", "indie"],
         "source": "local"
 	},
     {
@@ -972,7 +972,7 @@
         "img": "/assets/img/gms/motox3m-spooky-land.png",
         "type": "regular",
 		"url": "/assets/src/moto-x3m/spooky-land/index.html#moto-x3m-spooky-land",
-        "categories": ["racing", "indie"],
+        "categories": ["adventure", "indie"],
         "source": "local"
 	},
     {
@@ -1096,15 +1096,15 @@
         "source": "local"
 	},
     {
-		"name": "Big Town Tiny Square",
+		"name": "Big Tower Tiny Square",
         "img": "/assets/img/gms/btts.png",
         "type": "regular",
-		"url": "/assets/src/btts/index.html#big-town-tiny-square",
+		"url": "https://ubg98.github.io/BigTowerTinySquare/",
         "categories": ["platformer"],
-        "source": "local"
+        "source": "proxied"
 	},
     {
-		"name": "Big Town Tiny Square 2",
+		"name": "Big Tower Tiny Square 2",
         "img": "/assets/img/gms/btts2.png",
         "type": "regular",
 		"url": "/assets/src/btts/2/index.html#big-town-tiny-square",
@@ -1124,7 +1124,7 @@
         "img": "/assets/img/gms/slope.png",
         "type": "regular",
 		"url": "/assets/src/slope/index.html#slope",
-        "categories": ["rhythm", "platformer"],
+        "categories": ["platformer"],
         "source": "local"
 	},
     {
@@ -1172,7 +1172,7 @@
         "img": "/assets/img/gms/escape-road-2.png",
         "type": "exclusive",
 		"url": "/assets/src/escape-road/2/index.html#escape-road-2",
-        "categories": ["racing"],
+        "categories": ["adventure"],
         "source": "local"
 	},
     {
@@ -1364,16 +1364,224 @@
         "img": "/assets/img/gms/hw.png",
         "type": "regular",
 		"url": "/assets/src/hw/index.html#happy-wheels",
-        "categories": ["platformer", "rhythm"],
+        "categories": ["platformer", "sandbox"],
         "source": "local"
 	},
     {
 		"name": "Rain World",
         "img": "/assets/img/gms/rw.png",
-        "type": "regular",
+        "type": "exclusive",
 		"url": "https://shorturl.at/dfyGy",
         "categories": ["adventure", "platformer"],
         "source": "proxied"
+	},
+    {
+		"name": "Bad Piggies",
+        "img": "/assets/img/gms/bp.png",
+        "type": "regular",
+		"url": "/assets/src/bad-piggies/index.html#bad-piggies",
+        "categories": ["platformer", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Super Monkey Ball 1 and 2",
+        "img": "/assets/img/gms/smb.png",
+        "type": "exclusive",
+		"url": "/assets/src/smb/index.html#super-monkey-ball",
+        "categories": ["port", "platformer"],
+        "source": "local"
+	},
+    {
+		"name": "Your Only Move Is HUSTLE (yomi hustle)",
+        "img": "/assets/img/gms/yomi.png",
+        "type": "exclsuive",
+		"url": "/assets/src/yomihustle/index.html#yomi-hustle",
+        "categories": ["indie", "adventure", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Tough Love Arena",
+        "img": "/assets/img/gms/tla.png",
+        "type": "exclusive",
+		"url": "https://toughlovearena.com",
+        "categories": ["2player", "adventure", "port"],
+        "source": "proxied"
+	},
+    {
+		"name": "Sonic Revert",
+        "img": "/assets/img/gms/sr.png",
+        "type": "regular",
+		"url": "/assets/src/sr/index.html#sonic-revert",
+        "categories": ["platformer", "2player"],
+        "source": "local"
+	},
+    {
+		"name": "Rocket Soccer Derby",
+        "img": "/assets/img/gms/rsd.png",
+        "type": "regular",
+		"url": "/assets/src/rsd/index.html#rocket-soccer-derby",
+        "categories": ["2player", "other"],
+        "source": "local"
+	},
+    {
+		"name": "Gladihoppers",
+        "img": "/assets/img/gms/gladihoppers.png",
+        "type": "regular",
+		"url": "/assets/src/gladihoppers/index.html#gladihoppers",
+        "categories": ["2player", "adventure"],
+        "source": "local"
+	},
+    {
+		"name": "Tag",
+        "img": "/assets/img/gms/tag.png",
+        "type": "regular",
+		"url": "/assets/src/tag/index.html#tag",
+        "categories": ["platformer", "2player"],
+        "source": "local"
+	},
+    {
+		"name": "Tag [UPDATED]",
+        "img": "/assets/img/gms/tagupd.png",
+        "type": "regular",
+		"url": "/assets/src/tag/update/index.html#tag-updated",
+        "categories": ["platformer", "2player"],
+        "source": "local"
+	},
+    {
+		"name": "Kindergarten",
+        "img": "/assets/img/gms/kindergarten.png",
+        "type": "regular",
+		"url": "/assets/src/kindergarten/index.html#kindergarten",
+        "categories": ["adventure", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Kindergarten 2",
+        "img": "/assets/img/gms/kindergarten-2.png",
+        "type": "regular",
+		"url": "/assets/src/kindergarten/2/index.html#kindergarten-2",
+        "categories": ["adventure", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Kindergarten 3",
+        "img": "/assets/img/gms/kindergarten-3.png",
+        "type": "regular",
+		"url": "/assets/src/kindergarten/3/index.html#kindergarten-3",
+        "categories": ["adventure", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Five Nights At Last Breath",
+        "img": "/assets/img/gms/fnalb.png",
+        "type": "exclusive",
+		"url": "/assets/src/fnalb/index.html#five-nights-at-last-breath",
+        "categories": ["horror", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Jeffrey Epstein's Basics in Education and Kidnapping",
+        "img": "/assets/img/gms/jeieak.png",
+        "type": "exclusive",
+		"url": "/assets/src/ep-learn/index.html#estein",
+        "categories": ["horror", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Undertale Last Breath",
+        "img": "/assets/img/gms/last-breath.png",
+        "type": "exclusive",
+		"url": "/assets/src/last-breath/index.html#last-breath",
+        "categories": ["platformer", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Undertale Last Breath (PHASE 3)",
+        "img": "/assets/img/gms/last-breath-3.png",
+        "type": "exclusive",
+		"url": "/assets/src/last-breath/phase-three/index.html#last-breath-3",
+        "categories": ["platformer", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Bad Monday Simulator",
+        "img": "/assets/img/gms/bms.png",
+        "type": "regular",
+		"url": "/assets/src/bad-monday-sim/index.html#",
+        "categories": ["platformer", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Bad Bodyguards",
+        "img": "/assets/img/gms/badbody.png",
+        "type": "regular",
+		"url": "/assets/src/bad-bodyguards/index.html#bad-bodyguards",
+        "categories": ["rpg", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Bad Time Simulator",
+        "img": "/assets/img/gms/bad-time-sim.png",
+        "type": "regular",
+		"url": "/assets/src/bad-time-sim/index.html#bad-time-simulator",
+        "categories": ["indie", "other"],
+        "source": "local"
+	},
+    {
+		"name": "Resident Evil",
+        "img": "/assets/img/gms/re.png",
+        "type": "regular",
+		"url": "/assets/src/re/index.html#resident-evil",
+        "categories": ["horror", "other"],
+        "source": "local"
+	},
+    {
+		"name": "Resident Evil 3",
+        "img": "/assets/img/gms/re3.png",
+        "type": "regular",
+		"url": "/assets/src/re/3/index.html#resident-evil",
+        "categories": ["horror", "other"],
+        "source": "local"
+	},
+    {
+		"name": "Apes vs Helium",
+        "img": "/assets/img/gms/apes.png",
+        "type": "exclusive",
+		"url": "/assets/src/apes/index.html#apes-vs-helium",
+        "categories": ["shooter", "port"],
+        "source": "local"
+	},
+    {
+		"name": "Worst Time Simulator",
+        "img": "/assets/img/gms/wts.png",
+        "type": "exclsuive",
+		"url": "https://omegafredo.github.io/worst-time-simulator/",
+        "categories": ["port", "other"],
+        "source": "proxied"
+	},
+    {
+		"name": "Kirka.io",
+        "img": "/assets/img/gms/kirka.png",
+        "type": "regular",
+		"url": "https://kirka.io",
+        "categories": ["shooter", "2player"],
+        "source": "proxied"
+	},
+    {
+		"name": "Taming.io",
+        "img": "/assets/img/gms/taming.png",
+        "type": "exclusive",
+		"url": "https://taming.io",
+        "categories": ["2player", "other"],
+        "source": "proxied"
+	},
+    {
+		"name": "Binding Of Issac; Wrath of the Lamb",
+        "img": "/assets/img/gms/boiwotl.png",
+        "type": "regular",
+		"url": "/assets/src/boi/wrath-of-the-lamb/index.html#binding-of-issac-lamb",
+        "categories": ["indie", "adventure", "shooter"],
+        "source": "local"
 	},
     {
 		"name": "!! RANDOM GAME",
