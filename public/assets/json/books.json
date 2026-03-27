@@ -603,7 +603,7 @@
 		"name": "Doki Doki Literature Club",
         "img": "/assets/img/gms/ddlc.png",
         "type": "regular",
-		"url": "/assets/src/ddlc/index.html#doki-doki-literature-club",
+		"url": "/assets/src/doki/index.html#doki-doki-literature-club",
         "categories": ["adventure", "indie", "port"],
         "source": "local"
 	},
