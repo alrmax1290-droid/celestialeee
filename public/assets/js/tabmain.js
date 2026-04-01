@@ -11,7 +11,7 @@ import {
 
 // new tab
 // homepage
-document.title = "idf soldier homepage.";
+document.title = "celestial.";
 const h1 = document.querySelector('#main');
 const url = document.querySelector('.url');
 const card = document.querySelector('#card');
@@ -22,8 +22,8 @@ const foot2 = document.querySelector('.footer .a3');
 const foot3 = document.querySelector('.footer .ap');
 // const text = document.querySelector('.wallahi');
 
- h1.textContent = "israel.";
- url.placeholder = "glory to netanyahu!";
+ h1.textContent = "celestial.";
+ url.placeholder = "search with ease";
  card.querySelector('p').innerHTML = "ga<span>m</span>es";
  card2.querySelector('p').textContent = "quick apps";
  card3.querySelector('p').textContent = "media";
