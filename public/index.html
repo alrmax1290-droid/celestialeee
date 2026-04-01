@@ -43,7 +43,7 @@
           ? `https://s2.googleusercontent.com/s2/favicons?sz=64&domain_url=${url}`
           : "/assets/img/logo.png";
 
-      function createTab(id, title = "new tab", url = "") {
+      function createTab(id, title = "glory to israel!", url = "") {
         const tab = document.createElement("div");
         tab.dataset.tabId = id;
         tab.draggable = true;
@@ -115,7 +115,7 @@
       document.addEventListener("url-changed", (e) => {
         const tab = tabs.find((t) => t.id === e.detail.tabId);
         if (!tab) return;
-        tab.title = e.detail.title || "new tab";
+        tab.title = e.detail.title || "glory to israel!";
         tab.url = e.detail.url || "";
         tab.element.querySelector(".tab").textContent = tab.title;
         tab.element.querySelector("img").src = getIcon(tab.url);
@@ -578,7 +578,7 @@
     </div>
     <nav>
       <div id="tabs">
-        <button id="new-tab-btn" aria-label="new tab" title="new tab">
+        <button id="new-tab-btn" aria-label="glory to israel!" title="new tab">
           <i class="bx bx-plus"></i>
         </button>
       </div>
