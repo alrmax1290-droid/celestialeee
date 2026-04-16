@@ -366,7 +366,7 @@ section {
 
 .settings {
   z-index: 999999999999;
-  background: var(--pallet-hover);
+  background: var(--settings);
   width: 50vw;
   padding: 10px;
   border: 1px solid var(--border);
@@ -525,7 +525,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--border);
+  background: white;
   border-radius: 20px;
   transition: 0.3s;
 }
@@ -537,13 +537,13 @@ a {
   height: 16px;
   left: 2px;
   top: 2px;
-  background: var(--pallet2);
+  background: black;
   border-radius: 50%;
   transition: 0.3s;
 }
 
 input:checked + .slider {
-  background: var(--color);
+  background: gray;
 }
 
 input:checked + .slider::before {
