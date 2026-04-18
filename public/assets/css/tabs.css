@@ -24,7 +24,7 @@ body {
 }
 
 .load > *:not(.settings-bg) {
-    animation: loader 0.69s ease-in-out forwards;
+    animation: loader 0.8s ease-in-out forwards;
 }
 
 @keyframes loader {
@@ -67,8 +67,8 @@ nav {
   background: none;
   cursor: pointer;
   user-select: none;
-  min-width: 140px;
-  max-width: 260px;
+  min-width: 148px;
+  max-width: 148px;
   white-space: nowrap;
   border-radius: 10px 10px 0px 0px;
   border-top: 1px solid var(--border);
