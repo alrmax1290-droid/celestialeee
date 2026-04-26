@@ -1,0 +1,18 @@
+name: Deploy
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 153.75.225.180
+          username: jrdn
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            export PATH=$PATH:/usr/local/bin:/usr/bin:$HOME/.nvm/versions/node/$(ls $HOME/.nvm/versions/node | tail -1)/bin
+            cd ~/celestial
+            npm i
+            pm2 restart 0
