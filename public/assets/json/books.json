@@ -2397,7 +2397,31 @@
         "type": "exclusive",
 		"url": "https://tutoring-services.org/games/minusbbog/index.html",
         "categories": ["adventure", "port", "indie"],
-        "source": "proxied"
+        "source": "local"
+	},
+    {
+		"name": "s.p.l.i.t (SPLIT)",
+        "img": "/assets/img/gms/split.png",
+        "type": "exclusive",
+		"url": "/assets/src/split/index.html#s.p.l.i.t",
+        "categories": ["horror", "port", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "Just Shapes And Beats",
+        "img": "/assets/img/gms/jsab.png",
+        "type": "exclusive",
+		"url": "/assets/src/jsab/index.html#just-shapes-and-beats",
+        "categories": ["rhythm", "port", "indie"],
+        "source": "local"
+	},
+    {
+		"name": "YoHoHo.IO",
+        "img": "/assets/img/gms/yohoho.png",
+        "type": "exclusive",
+		"url": "/assets/src/yohoho/index.html#yohohoio",
+        "categories": ["shooter", "port", "indie"],
+        "source": "local"
 	},
     {
 		"name": "-!! RANDOM GAME",

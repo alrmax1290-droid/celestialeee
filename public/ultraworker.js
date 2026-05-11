@@ -4,8 +4,6 @@ importScripts(
 importScripts("/violet/violet.config.js")
 importScripts(__uv$config.sw)
 importScripts("/scram/scramjet.all.js");
-importScripts("/assets/js/ww/workerware.js");
-importScripts("https://raw.githubusercontent.com/titaniumnetwork-dev/Pyrus/refs/heads/main/public/marketplace/adblock/index.js");
 
 const ww = new WorkerWare();
 
