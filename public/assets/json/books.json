@@ -2379,9 +2379,9 @@
 		"name": "-3 (Minus Three)",
         "img": "/assets/img/gms/-3.png",
         "type": "exclusive",
-		"url": "/assets/src/-3/index.html#-3-minus-three",
+		"url": "https://tutoring-services.org/games/minus3/index.html",
         "categories": ["adventure", "port", "indie"],
-        "source": "local"
+        "source": "proxied"
 	},
     {
 		"name": "Schoolboy Runaway",
