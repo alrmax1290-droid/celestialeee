@@ -8,8 +8,8 @@ jobs:
     steps:
       - uses: appleboy/ssh-action@v1.0.3
         with:
-          host: 153.75.225.180
-          username: jrdn
+          host: 92.38.177.35
+          username: a
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             export PATH="$HOME/.bun/bin:$PATH:$HOME/.nvm/versions/node/$(ls $HOME/.nvm/versions/node 2>/dev/null | tail -1)/bin"
