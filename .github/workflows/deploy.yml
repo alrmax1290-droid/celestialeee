@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: appleboy/ssh-action@v1.0.3
         with:
-          host: 92.38.177.35
+          host: 92.38.177.47
           username: a
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
